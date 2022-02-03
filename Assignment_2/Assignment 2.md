@@ -17,7 +17,7 @@ hmmscan /shared/databases/pfam-3/Pfam-A.hmm 2CG9_uniprot.fasta > 2CG9_uniprot.ou
 ![img](https://lh5.googleusercontent.com/Wn85kUgjf5uUfa14JTZ8kgxd4EauC1QNCYtrPhrDEJmtCudLvstw4zPUzaJap49VFWwpFHHY8GTYGYoli-MGgi26sP5S_vr5SQYb-c5LPvvMLolxT_DdTU4ZS76h2Hn8-W0Qirty)
 
 ```bash
-# Extracting HMM corresponding to HSP90 protein family:
+# Extracting profiles from Pfam corresponding to HSP90 protein family domains:
 hmmfetch /shared/databases/pfam-3/Pfam-A.hmm "HSP90" > HSP90_domain.hmm
 ```
 
