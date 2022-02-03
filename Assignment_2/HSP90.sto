@@ -1,0 +1,106 @@
+# STOCKHOLM 1.0
+
+#=GS sp|P02829|HSP82_YEAST DE ATP-dependent molecular chaperone HSP82 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HSP82 PE=1 SV=1
+#=GS sp|B8IU50|HTPG_METNO  DE Chaperone protein HtpG OS=Methylobacterium nodulans (strain LMG 21967 / CNCM I-2342 / ORS 2060) OX=460265 GN=htpG PE=3 SV=1
+#=GS sp|P04811|HSP83_DROVI DE Heat shock protein 83 (Fragment) OS=Drosophila virilis OX=7244 GN=Hsp83 PE=3 SV=1
+#=GS sp|P11501|HS90A_CHICK DE Heat shock protein HSP 90-alpha OS=Gallus gallus OX=9031 GN=HSP90AA1 PE=3 SV=3
+#=GS sp|P35016|ENPL_CATRO  DE Endoplasmin homolog OS=Catharanthus roseus OX=4058 GN=HSP90 PE=2 SV=1
+#=GS sp|P58477|HTPG_RHIME  DE Chaperone protein HtpG OS=Rhizobium meliloti (strain 1021) OX=266834 GN=htpG PE=3 SV=1
+#=GS sp|Q86L04|TRAP1_DICDI DE TNF receptor-associated protein 1 homolog, mitochondrial OS=Dictyostelium discoideum OX=44689 GN=trap1 PE=2 SV=1
+#=GS sp|Q9CQN1|TRAP1_MOUSE DE Heat shock protein 75 kDa, mitochondrial OS=Mus musculus OX=10090 GN=Trap1 PE=1 SV=1
+
+sp|P02829|HSP82_YEAST         ...........................................................................................................................masetfefqaeitqlmsliintvysnkeiflrelisnasdaldkirykslsdpkqletepdlfiritpkpeqkvlei
+#=GR sp|P02829|HSP82_YEAST PP ...........................................................................................................................*****************************************************************************
+sp|B8IU50|HTPG_METNO          ........................................................................................msetlerhafgaevgrlldlvvhalysereiflrelvanaadavdrrrfgaltdpalalpaeakvrirpdkaartltisdpgigmgkedlaqnlgtiarsgtrafsqslaea
+#=GR sp|B8IU50|HTPG_METNO  PP ........................................................................................****************************************************************************************************************
+sp|P04811|HSP83_DROVI         ..........................................................................................................................mpeeaetfafqaeiaqlmsliintfysnkeiflrelisnasdaldkiryesltdpskldsgkelyiklipnktagtlt
+#=GR sp|P04811|HSP83_DROVI PP ..........................................................................................................................******************************************************************************
+sp|P11501|HS90A_CHICK         ...............................................................................................................mpeavqtqdqpmeeevetfafqaeiaqlmsliintfysnkeiflrelisnssdaldkiryesltdpskldsgkdlkinlipnkhdrtlt
+#=GR sp|P11501|HS90A_CHICK PP ...............................................................................................................*****************************************************************************************
+sp|P35016|ENPL_CATRO          ...............................................mrkwtvpsvlfllcpslssscqgrkihanaeadsdapvdppkvedkigavpnglstdsdvakreaesmsmrnlrsdaekfefqaevsrlmdiiinslysnkdiflrelisnasdaldkirflaltdkeilgegdtakleiqikldkekkilsi
+#=GR sp|P35016|ENPL_CATRO  PP ...............................................*********************************************************************************************************************************************************
+sp|P58477|HTPG_RHIME          .....................................................................................msevetsvekhvfeadvakllhlmvhsvysdknvflrelisnaadaceklryeaivapellgsdpasritltldeenarlviedngigmgrdelveslgtiarsgtrafmeriea
+#=GR sp|P58477|HTPG_RHIME  PP .....................................................................................*******************************************************************************************************************
+sp|Q86L04|TRAP1_DICDI         mqrtlskvilnsgknnllkssnllnsnllkatttniigiktinnnnnvnsiigfkslnkryftsntpkveeeddeiapdeaikaeekiketerviglseklsfqtetqkilhivaeslytekevfirelisnasdaiekvrhtqltnasmiedasipfeikistdednktliiqdsgigmtkdemiknlgkigysgssdf
+#=GR sp|Q86L04|TRAP1_DICDI PP ********************************************************************************************************************************************************************************************************
+sp|Q9CQN1|TRAP1_MOUSE         ..............macelravllwgrglqtvlrapalagvrrgkpvlhlqkttvqfrgptqslasgisagqlystqaaedkeeeslhsiisnteavrgsvskhefqaetkklldivarslysekevfirelisnasdaleklrhklvcegqvlpemeihlqtdakkgtitiqdtgigmtqeelvsnlgtiarsgskafl
+#=GR sp|Q9CQN1|TRAP1_MOUSE PP ..............******************************************************************************************************************************************************************************************
+#=GC PP_cons                  ........................................................................................................................................................................................................
+#=GC RF                       ........................................................................................................................................................................................................
+
+sp|P02829|HSP82_YEAST         rdsgigmtkaelinnlgtiaksgtkafmealsagadvsmigqfgvgfyslflvadrvqvisksnddeqyiwesnaggsftvtldevnerigrgtilrlflkddqlEYLEEKRIKEVIKRHSEFVAYPIQLVVTKEVEKEVPIPEEEKKDEEKKDEEKKDEDDKKPKLE...EVD-E...EEEKKPKTKKVKEEVQEIEEL
+#=GR sp|P02829|HSP82_YEAST PP *********************************************************************************************************8********************************************999999888754444444...444.4...56799****************
+sp|B8IU50|HTPG_METNO          kpderpsligqfgvgfysafmvadrvevtsrragsdeawtwasdgegeytlspatreepgtdvvlhmkadadeyleplrietivrkwadhitvpitllrdgeevs---------------------------------------------------------------...-----...--------------------G
+#=GR sp|B8IU50|HTPG_METNO  PP **********************************************************************************************99998876554..............................................................................................4
+sp|P04811|HSP83_DROVI         iidtgigmtksdlvnnlgtiaksgtkafmealqagadismigqfgvgfysaylvadkvtvtsknnddeqyvwessaggsftvradnseplgrgtkivlfikedqtDYLEESKIKEIVNKHSQFIGYPIKLLVEKEREKEVSDDEDDEKKEGDE-KKEMDTDEPKIEDV...GEDEDadkKDKDAKKKKTIKEKYTEDEEL
+#=GR sp|P04811|HSP83_DROVI PP *********************************************************************************************************7**************************************888655555.55566666666655...444440003344679999***********
+sp|P11501|HS90A_CHICK         ivdtgigmtkadlvnnlgtiaksgtkafmealqagadismigqfgvgsysaylvaekvtvitkhnddeqyawessaggsftvrldngeplgrgtkvilhlkedqtEYLEERRIKEIVKKHSQFIGYPIRLFVEKERDKEVSDDEAEEKEEEKEEKEEKTEDKPEIEDVgsdEEEEK...KDGDKKKKKKIKEKYIDEEEL
+#=GR sp|P11501|HS90A_CHICK PP *********************************************************************************************************8**************************************************99997777665411144445...555689***************
+sp|P35016|ENPL_CATRO          rdrgigmtkedliknlgtiaksgtsafvekmqtsgdlnligqfgvgfysvylvpdyveviskhnddkqyiweskadgafaisedvwneplgrgteirlhlrdeaqEYLDEFKLKELVKRYSEFINFPIYLWASKEVEVEVPAEEDDSSDDEDNKSESSSSE--EGEEE...ETEKE...EDEKKPKTKKVKETTYEWELL
+#=GR sp|P35016|ENPL_CATRO  PP *********************************************************************************************************8*****************************************99999999966665..67778...88999...99*******************
+sp|P58477|HTPG_RHIME          aqnkdgaqligqfgvgfysafmvadnvdvvsrragtdkawhwasdgkgsytvsavdladapargtritlhlmdeaktftsrwtverivkeqsghvpvpisivekp---------------------------------------------------------------...-----...--------------GAEPAQV
+#=GR sp|P58477|HTPG_RHIME  PP ***************************************************************************999999999999999999999998876555........................................................................................5666778
+sp|Q86L04|TRAP1_DICDI         ikklgenpdkasiigqfgvgfyscfmvghtikiytksatpgskgylwesdgtgsysiteaegvsrgtkiiihlkpssyeyskksiveniikkysnfvgfpialng---------------------------------------------------------------...-----...------------------TTV
+#=GR sp|Q86L04|TRAP1_DICDI PP ********************************************************************************************9999999998776............................................................................................578
+sp|Q9CQN1|TRAP1_MOUSE         ealqnqaetsskiigqfgvgfysafmvadkvevysrsaapespgyqwlsdgsgvfeiaeasgvrpgtkiiihlksdckdfasesrvqdvvtkysnfvsfplylng---------------------------------------------------------------...-----...------------------KRI
+#=GR sp|Q9CQN1|TRAP1_MOUSE PP *******************************************************************************************99999999998765............................................................................................678
+#=GC PP_cons                  .........................................................................................................8**************************************999988888988777766666655...55565...566789********9999899
+#=GC RF                       .........................................................................................................xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx...xxxxx...xxxxxxxxxxxxxxxxxxxxx
+
+sp|P02829|HSP82_YEAST         NKTKPLWTRNPSDITQEEYNAFYKSISNDWED..PLYVKHFSVEGQLEFRAILFIPKRAPFDLFESK..KKKNNIKLYVRRVFITDEAEDLIPEWLSFVKGVVDSEDLPLNLSREMLQQNKIMKVIRKNIVKKLIEAFNEIA......................E.DSEQFEKFYSAFSKNIKLGVHEDTQN..RAALAK
+#=GR sp|P02829|HSP82_YEAST PP ********************************..*********************************..*************************************************************************......................*.**************************..******
+sp|B8IU50|HTPG_METNO          NEGTALWRKPKAEITEETYTAFYRHLTHNFDT..PWATLHWRAEGALDFSALLFIPSMKPFLAVEEE..-RESKVRLHVRRMFITDEA-GLLPSWLRFVQGVVDTEDLPLNVSREMLQATPVLARIRRAVTAKVLSELKSRA......................K.DADGYASFWQAFGPVLKEGIWEDAEQ..RDDIAG
+#=GR sp|B8IU50|HTPG_METNO  PP 88899***************************..***************************888776...5689************97.69***************************************************......................*.**************************..******
+sp|P04811|HSP83_DROVI         NKTKPIWTRNPDDISQEEYGEFYKSLTNDWED..HLAVKHFSVEGQLEFRALLFIPRRTPFDLFENQ..KKRNNIKLYVRRVFIMDNCEDLIPEYLNFIKGVVD--------------------------------------......................-.--------------------------..------
+#=GR sp|P04811|HSP83_DROVI PP ********************************..*********************************..**********************************9................................................................................................
+sp|P11501|HS90A_CHICK         NKTKPIWTRNPDDITNEEYGEFYKSLTNDWED..HLAVKHFSVEGQLEFRALLFVPRRAPFDLFENR..KKKNNIKLYVRRVFIMDNCEELIPEYLNFMRGVVDSEDLPLNISREMLQQSKILKVIRKNLVKKCLELFTELA......................E.DKENYKKFYEQFSKNIKLGIHEDSQN..RKKLSE
+#=GR sp|P11501|HS90A_CHICK PP ********************************..*********************************..*************************************************************************......................*.**************************..******
+sp|P35016|ENPL_CATRO          NDMKAIWLRNPKDVTDDEYTKFYHSLAKDFSEekPLAWSHFTAEGDVEFKAFTLLPPKAPQDLYESYynSNKSNLKLYVRRVFISDEFDELLPKYLNFLKGLVDSDTLPLNVSREMLQQHSSLKTIKKKLIRKALDMIRKIAdedpdeandkdkkeveestdndE.KKGQYAKFWNEFGKSIKLGIIEDAAN..RNRLAK
+#=GR sp|P35016|ENPL_CATRO  PP ******************************88789*******************************98899**********************************************************************************************.**************************..******
+sp|P58477|HTPG_RHIME          ADGTALWTKQKSEISKDDYTDFYRGVAGQYDE..PALTVHFRAEGRHEYTALAFVPGSKPFDLFDPD..R-KGRMKLYVKRVFITDEA-ELLPRYLRFVRGLVDTADLPLNVSREMIQESPLLANIRKGLTNRVLTSIEKLA......................EsDSEAFAKIWENFGSVIKEGIYEDFER..RGQLLA
+#=GR sp|P58477|HTPG_RHIME  PP 8899****************************..*******************************97..6.578************97.69***************************************************......................956799**********************..******
+sp|Q86L04|TRAP1_DICDI         NTIKPLWTLNKNAISEEEHKEFYQFLSKSYDT..PSYRVHFSTDTPLSIRSIFYIPSQH-MEKYGMG..KMEPGVSLFSRKVLIQQKANGILPEWMRFVRGVVDSEDIPLNVSREHLQDNGLIQRISSVLVKRILKHLNDEA.....................kS.DPEKFNVFMTEFGGFFKEGIITDFKW..KDEISK
+#=GR sp|Q86L04|TRAP1_DICDI PP ********************************..**********************975.7889999..******************************************************************9998766.....................26.889***********************..******
+sp|Q9CQN1|TRAP1_MOUSE         NTLQAIWMMDPKDISEFQHEEFYRYIAQAYDK..PRFTLHYKTDAPLNIRSIFYVPEMKPS-MFDVS.rELGSSVALYSRKVLIQTKAADILPKWLRFIRGVVDSEDIPLNLSRELLQESALIRKLRDVLQQRLIKFFIDQS.....................kK.DAEKYAKFFEDYGLFMREGIVTTAEQdiKEDIAK
+#=GR sp|Q9CQN1|TRAP1_MOUSE PP 99******************************..**************************7.77755.27789**************************************************************9876654.....................16.889*****************87655423889***
+#=GC PP_cons                  99******************************..************************9*9999998..9999**************9*9***********************************************99999......................9.99********************9999..******
+#=GC RF                       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx......................x.xxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxx
+
+sp|P02829|HSP82_YEAST         LLRYNS....TKS.VDELTSLTDYVTRMPEHQKNIYYITGESLKAVEKSPFLDALKAKNFEVLFLTDPIDEYAFTQLKEFEGKTLVDI.TKD-FEL...EETDEEK......AEREKEIKEYEPLTKALKE.ILGDQVEKVVVSYKLLDAPAAIRTGQFGWSANMERIMKAQALRDSSMSSYMSSKKTFEISPKSPIIKE
+#=GR sp|P02829|HSP82_YEAST PP ******....***.**************************************************************************.***.***...*******......*******************.********************************************************************
+sp|B8IU50|HTPG_METNO          LIRFRS....SAV.E-GWTSFADYVSRMKPNQEAIYILVGDDTKALASSAQIEGFRARGIEVLLLSDHVDAFWPERLDKFDGKPIRSI.TQSADDL...SAFAPE-......GESEGEAADLADLVPKLKE.ILKDDVTDVRASQRLVESAVLLSASSGGPDLQMQRLLRR------AGRGFGAGLPVLELNPRHALVRR
+#=GR sp|B8IU50|HTPG_METNO  PP ******....986.5.689*********************************************************************.***9999...997777.......678889999**********.**********************************99985......567899999**************
+sp|P04811|HSP83_DROVI         ------....---.--------------------------------------------------------------------------.-------...-------......-------------------.--------------------------------------------------------------------
+#=GR sp|P04811|HSP83_DROVI PP ........................................................................................................................................................................................................
+sp|P11501|HS90A_CHICK         LLRYYT....SAS.GDEMVSLKDYCTRMKENQKHVYYITGETKDQVANSAFVERLRKHGLEVIYMIEPIDEYCVQQLKEFEGKTLVSV.TKEGLEL...PEDEEEK......KKQEEKKAKFENLCKIMKD.ILEKKVEKVVVSNRLVTSPCCIVTSTYGWTANMERIMKAQALRDNSTMGYMAAKKHLEINPDHSIIET
+#=GR sp|P11501|HS90A_CHICK PP ******....***.**************************************************************************.*******...*******......*******************.********************************************************************
+sp|P35016|ENPL_CATRO          LLRFES....TKS.EGKLTSLDQYISRMKSGQKDIFYITGTSKEQLEKSPFLERLTKKNYEVILFTDPVDEYLMQYLMDYEDKKFQNV.SKEGLKI...GK-DSK-......--DKELKESFKELTKWWKGaLASENVDDVKISNRLANTPCVVVTSKYGWSSNMERIMQSQTLSDASKQAYMRGKRVLEINPRHPIIKE
+#=GR sp|P35016|ENPL_CATRO  PP ******....***.**************************************************************************.*******...**.444.........6899************98999*****************************************************************
+sp|P58477|HTPG_RHIME          LSRFRT....TAD.DDKPRALSDYVKEMKEGQSAIYYLTGDNLAQLKASPQLEGFRARGIEVLLLTCPVDSFWVTTAPDFDGKPFKSI.TQGAADLagiAKNDDAA......AASPEAGAAVTDFVSFARE.TLGEAVSDVRTSDRLTESAVCLVAPEQGPDRQLQKMLQ-----DAGRI-EGAPKPVLEINPGHQLIAA
+#=GR sp|P58477|HTPG_RHIME  PP ******....***.**************************************************************************.*9888762226788888......99999999***********.*****************************999998865.....66554.456799*************
+sp|Q86L04|TRAP1_DICDI         LLRFESsngsTAS.KTDAVSLEQYVSRMKPEQKNIYFLSVPNRAVGLSSPYYEPFQLKDIEVIFLYNAVDEFVLTNVGHFGDKKIVSVeSKEAEEF...LATNQDK......KTETLSQDEIDKFLSWVST.VASDKVTQAKSTTRSISSPAIIIDHE---SANFRRMLKMV----EPGKQHETPKQVVEFNMNHPIILK
+#=GR sp|Q86L04|TRAP1_DICDI PP ****972222568.99*****************************9*****************************************9779*****...*******......*******************.***********************987...9******9964....34566788999***********99
+sp|Q9CQN1|TRAP1_MOUSE         LLRYES....SALpAGQLTSLPDYASRMQAGTRNIYYLCAPNRHLAEHSPYYEAMKQKHTEVLFCYEQFDELTLLHLREFDKKKLISV.ETD-IVV...DHYKEEKfedtspADERLSEKETEDLMAWMRN.ALGSRVTNVKVTFRLDTHPAMVTVLEMGAARHF---LRMQQLAKTQEERAQLLQPTLEINPRHTLIKK
+#=GR sp|Q9CQN1|TRAP1_MOUSE PP *****9....9862689**********************************************************************9.998.555...5544444111111233446889**********.****************************88765...5667788888888888899*************
+#=GC PP_cons                  *****9....999.9*9***********************************************************************.9*99999...8988888......8888999************.*****************************9999**9888899998788988999**************
+#=GC RF                       xxxxxx....xxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.xxxxxxx...xxxxxxx......xxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+sp|P02829|HSP82_YEAST         LKKRVDEgGAQDKTVKDLTKLLYETALLTSGFSLDEPTSFASRINRLISLGLNIDEDEET---E..TAPEASTAAPVEEVPADTEMEEVD.....
+#=GR sp|P02829|HSP82_YEAST PP ****655279***********************************************886...5..678999*****************9.....
+sp|B8IU50|HTPG_METNO          LAERAKT.GED---IAEAAQTLLDLAHVQGGDAPRDPVAFARRVATA-----------------..------------------------laaqg
+#=GR sp|B8IU50|HTPG_METNO  PP **99988.765...88999999********************99865...........................................5789*
+sp|P04811|HSP83_DROVI         -------.--------------------------------------------------------..------------------------.....
+#=GR sp|P04811|HSP83_DROVI PP ...............................................................................................
+sp|P11501|HS90A_CHICK         LRQKAEA.DKNDKSVKDLVILLYETALLSSGFSLEDPQTHANRIYRMIKLGLGIDEDDTAAEEA..SPAVTEEMPPLEGDDDTSRMEEVD.....
+#=GR sp|P11501|HS90A_CHICK PP *******.********************************************************..***********************9.....
+sp|P35016|ENPL_CATRO          LRERVVK.DAEDESVKQTARLMYQTALMESGFMLNDPKEFASSIYDSVKSSLKISPDATVEEEDdtEEAEAESGTTESSAAEDAGAETLDlkdel
+#=GR sp|P35016|ENPL_CATRO  PP *******.****************************************************999955566666777778888899999887*****
+sp|P58477|HTPG_RHIME          LATCPSE.DKAFR--EDAVKLLLDQARVLDGDRPEDPRAFAERLSRVFGRAL------------..------------------------ke...
+#=GR sp|P58477|HTPG_RHIME  PP *887666.55444..5899**************************9987666......................................69...
+sp|Q86L04|TRAP1_DICDI         LVQQTES.--NPTIAKLVIDQVVDNAFVSAGL-IEDNREMIPRINQLLDS--------------..------------------------lltk.
+#=GR sp|Q86L04|TRAP1_DICDI PP 9776543...3444444555778999998885.78888899999988765........................................6689.
+sp|Q9CQN1|TRAP1_MOUSE         LCQLRES.E--PELAQLLVDQIYENAMIAAGL-VDDPRAMVGRLNDLLVKVL------------..------------------------ekh..
+#=GR sp|Q9CQN1|TRAP1_MOUSE PP *987655.4..5566779999**********6.8*********999887665......................................699..
+#=GC PP_cons                  *998877.7877788889999**********9*9**********99998888*****999*998..77888999999999999*9**998.....
+#=GC RF                       xxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx..xxxxxxxxxxxxxxxxxxxxxxxx.....
+//

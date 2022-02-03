@@ -10,12 +10,14 @@ Nico Ares, Dante Aviñó, Miguel Borge, Isaac Soul
 Our 2CG9 protein didn’t have a valid fasta file in the pdb database since it had no gaps. To deal with this issue we obtained a valid fasta file from uniprot through the following accession name: UniProtKB - P02829 (HSP82_YEAST). We then used the pfam database to obtain the best sequence alignment for our desired protein through the hmmscan command from the HMMER package. Once we had the output file for the hmmscan, we observed that the best model for our protein was the “HSP90”, which we used to obtain the hidden markov model with the hmmfetch command.
 
 ```bash
+# Searching in Pfam database HMMs fitting 2CG9 protein sequence:
 hmmscan /shared/databases/pfam-3/Pfam-A.hmm 2CG9_uniprot.fasta > 2CG9_uniprot.out
 ```
 
 ![img](https://lh5.googleusercontent.com/Wn85kUgjf5uUfa14JTZ8kgxd4EauC1QNCYtrPhrDEJmtCudLvstw4zPUzaJap49VFWwpFHHY8GTYGYoli-MGgi26sP5S_vr5SQYb-c5LPvvMLolxT_DdTU4ZS76h2Hn8-W0Qirty)
 
 ```bash
+# Extracting profiles from Pfam corresponding to HSP90 protein family domains:
 hmmfetch /shared/databases/pfam-3/Pfam-A.hmm "HSP90" > HSP90_domain.hmm
 ```
 
@@ -51,7 +53,29 @@ hmmsearch hsp90_pdb.hmm /shared/databases/blastdat/uniprot_sprot > hsp90_uniprot
 
 Sequences, obtained from the hmmsearch command, from which we create the multiple sequence alignment fasta file using the cat file.fa >> output_file.fa command:
 
-sp|P11501|HS90A_CHICK Heat shock protein HSP 90-alpha OS=Galsp|Q76LV2|HS90A_BOVIN Heat shock protein HSP 90-alpha OS=Bossp|Q9GKX7|HS90A_HORSE Heat shock protein HSP 90-alpha OS=Equsp|P07900|HS90A_HUMAN Heat shock protein HSP 90-alpha OS=Homsp|O02705|HS90A_PIG  Heat shock protein HSP 90-alpha OS=Sussp|Q4R4P1|HS90A_MACFA Heat shock protein HSP 90-alpha OS=Macsp|A5A6K9|HS90A_PANTR Heat shock protein HSP 90-alpha OS=Pan
+```bash
+# Joining all fasta sequences in a single file, putting our target fasta sequence (P02829.fasta) as the first one: 
+cat P02829.fasta > FINAL.fasta
+cat B8IU50.fasta > FINAL.fasta
+cat P04811.fasta > FINAL.fasta
+...
+```
+
+sp|B8IU50|HTPG_METNO  Chaperone protein htpG OS=Methylobacterium nodulans GN=htpG
+
+sp|P04811|HSP83_DROVI  Heat shock protein 83 (Fragment) OS=Drosophila virilis GN=Hsp83
+
+sp|P11501|HS90A_CHICK  Heat shock protein HSP 90-alpha OS=Gallus gallus GN=HSP90AA1
+
+sp|P35016|ENPL_CATRO  Endoplasmin homolog OS=Catharanthus roseus GN=HSP90
+
+sp|P58477|HTPG_RHIME  Chaperone protein htpG OS=Rhizobium meliloti (strain 1021) GN=htpG
+
+sp|Q86L04|TRAP1_DICDI  TNF receptor-associated protein 1 homolog, mitochondrial OS=Dictyostelium discoideum GN=trap1
+
+sp|Q9CQN1|TRAP1_MOUSE  Heat shock protein 75 kDa, mitochondrial OS=Mus musculus GN=Trap1
+
+
 
 With our MSA file (FINALf.fasta) we perform the hmmalign command (hmmalign HSP90_domain.hmm FINALf.fasta > HSP90_hmm.sto):
 
@@ -62,6 +86,17 @@ With our MSA file (FINALf.fasta) we perform the hmmalign command (hmmalign HSP90
 We can also perform the clustalw2 command with the FINALf.fasta file (clustalw2 FINALf.fasta):
 
 ![img](https://lh6.googleusercontent.com/Z0An_ZwFzPgL-9AXt6d16lyFygfu7y6jCqmqLsgLbZkX_t3aU5gUkFGkjnu_zhziVlb9TrmlBkUK2fC2mD3FwUuGbqc1uTEOzlrshxAKRVmn0CeB4pwSuj5robbM5eN4wK9yQWXC)
+
+```
+# Run ClustalW to perform MSA using HSP90 sequences
+clustalw2 FINAL.fasta 
+
+# Use hmmalign to make a MSA with HSP90 sequences
+hmmalign HSP90.hmm fastas/FINAL.fasta > HSP90.sto
+# Change format of the MSA using perl script:
+perl /shared/PERL/aconvertMod2.pl -in h -out c <HSP90.sto>HSP90.clu
+
+```
 
 
 

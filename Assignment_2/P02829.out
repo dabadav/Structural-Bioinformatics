@@ -1,0 +1,172 @@
+# hmmscan :: search sequence(s) against a profile database
+# HMMER 3.3.1 (Jul 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query sequence file:             P02829.fasta
+# target HMM database:             /shared/databases/pfam-3/Pfam-A.hmm
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       sp|P02829|HSP82_YEAST  [L=709]
+Description: ATP-dependent molecular chaperone HSP82 OS=Saccharomyces cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=HSP82 PE=1 SV=1
+Scores for complete sequence (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Model         Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------      -----------
+   7.7e-261  865.9  37.8     9e-261  865.7  37.8    1.0  1  HSP90          Hsp90 protein
+    2.5e-11   43.1   0.0    4.4e-11   42.3   0.0    1.4  1  HATPase_c      Histidine kinase-, DNA gyrase B-, and HSP90-li
+    1.5e-10   40.7   0.0    1.5e-10   40.7   0.0    2.1  2  HATPase_c_3    Histidine kinase-, DNA gyrase B-, and HSP90-li
+  ------ inclusion threshold ------
+      0.063   12.2   0.3       0.39    9.6   0.0    2.0  2  Peptidase_S10  Serine carboxypeptidase
+      0.065   12.6   2.3      0.093   12.1   0.1    2.4  2  KCl_Cotrans_1  K-Cl Co-transporter type 1 (KCC1)
+
+
+Domain annotation for each model (and alignments):
+>> HSP90  Hsp90 protein
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  865.7  37.8  3.3e-264    9e-261       1     531 []     183     709 .]     183     709 .] 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 865.7 bits;  conditional E-value: 3.3e-264
+                            GGGSHHHHHHHHHHHHTT-SS-EEEEEEE---------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX...XXXEXXXXXXXEEEEEE CS
+                  HSP90   1 eyleekklkelvkkhsefisypiklvvekevekevpdeeeeeekeekeeeeekeeeekkeeeeeeeeeeeekkkktkkvkettteeel 88 
+                            eyleek++ke++k+hsef++ypi+lvv+kevekevp  eee+++eek++ee+k+e++kk + ee + eeeekk+ktkkvke+++e+e+
+  sp|P02829|HSP82_YEAST 183 EYLEEKRIKEVIKRHSEFVAYPIQLVVTKEVEKEVPIPEEEKKDEEKKDEEKKDEDDKKPKLEEVD-EEEEKKPKTKKVKEEVQEIEE 269
+                            8********************************************999999888754444444444.456799*************** PP
+
+                            ESXXSXGGGSXGGGSXHHHHHHHHHCCCTTTSXXSEEEEEEEXXXXXEEEEEEEXSSXXSTTTXXXXXXXXSXEEETTEEEESSXTTS CS
+                  HSP90  89 lnktkpiWtrnpkdvteeeyaafyksltndwedplavkhfsveGqlefkallfvPkraPfdlfeskkkknniklyvrrvfitddaedl 176
+                            lnktkp+Wtrnp+d+t+eey+afyks++ndwedpl+vkhfsveGqlef+a+lf+PkraPfdlfeskkkknniklyvrrvfitd+aedl
+  sp|P02829|HSP82_YEAST 270 LNKTKPLWTRNPSDITQEEYNAFYKSISNDWEDPLYVKHFSVEGQLEFRAILFIPKRAPFDLFESKKKKNNIKLYVRRVFITDEAEDL 357
+                            **************************************************************************************** PP
+
+                            SXGGGTTXEXEEEESSSXSSSXCCCCCTXHHHHHHHHHHHHHHHHHHHCCHTCHHHHHCHHHHHHHCCCXXXXSXCCCHHHHHTTXEE CS
+                  HSP90 177 iPeylsfvkGvvdsedlPlnvsretlqqnkilkvirkklvkkalelikeiaedkedykkfyeefskniklGihedaanrkklakllrf 264
+                            iPe+lsfvkGvvdsedlPln+sre+lqqnki+kvirk++vkk +e ++eiaed+e+++kfy++fskniklG+hed++nr++lakllr+
+  sp|P02829|HSP82_YEAST 358 IPEWLSFVKGVVDSEDLPLNLSREMLQQNKIMKVIRKNIVKKLIEAFNEIAEDSEQFEKFYSAFSKNIKLGVHEDTQNRAALAKLLRY 445
+                            **************************************************************************************** PP
+
+                            EETTEEEEEEEHHHHHHCSXTTXXEEEEEXXXXHHHHCCSCCHHHHHHTTXXEEEXXSCCHHHHHHCHSBXXXXEEEETTBX.XXXXX CS
+                  HSP90 265 estksedelvslkdyvtrmkeeqkkiyyitGeskkqvekspflerlkkknyevlyltdpvdeyaiqqlkefegkklvnvtkeGlelee 352
+                            +stks del+sl+dyvtrm+e+qk+iyyitGes k+vekspfl++lk+kn+evl+ltdp+deya++qlkefegk+lv++tk+ +elee
+  sp|P02829|HSP82_YEAST 446 NSTKSVDELTSLTDYVTRMPEHQKNIYYITGESLKAVEKSPFLDALKAKNFEVLFLTDPIDEYAFTQLKEFEGKTLVDITKD-FELEE 532
+                            **********************************************************************************.***** PP
+
+                            XHHHHHHHHHHHHHHHHHHHHHHHTTTTTESEEEEXSSXSSXSEEEEBXXXXXXXXHHHHHHHHHHHXXTSXSSSSXXEEEEEXTTSH CS
+                  HSP90 353 seeekkkreelkeefeeltkllkeiledkvekvvvsnrlvdsPcvlvtskyGWsanmerimkaqalrdssksaymsskktleinPkhp 440
+                            ++eek++re++ +e+e+ltk+lkeil+d+vekvvvs +l d+P++++t+++GWsanmerimkaqalrdss+s+ymsskkt+ei+Pk+p
+  sp|P02829|HSP82_YEAST 533 TDEEKAEREKEIKEYEPLTKALKEILGDQVEKVVVSYKLLDAPAAIRTGQFGWSANMERIMKAQALRDSSMSSYMSSKKTFEISPKSP 620
+                            **************************************************************************************** PP
+
+                            HHHHHHHHHHH.TTTXHHHHHHHHHHHHHHHHHXXXXXSXTTTXXXHHHHHHTTTTHXXSTTTTTTGGGXGGGXXXXXXXXXXXXXXX CS
+                  HSP90 441 iikelrkrvee.dkedksvkdlvvllyetallesGfsledpkefasrierliklglsidedeeveeeeeeeeaeekesaeeeaeesem 527
+                            iikel+krv+e +++dk+vkdl++llyetall+sGfsl++p++fasri+rli+lgl+idedee+   e+++ea++++++ee  +++em
+  sp|P02829|HSP82_YEAST 621 IIKELKKRVDEgGAQDKTVKDLTKLLYETALLTSGFSLDEPTSFASRINRLISLGLNIDEDEET---ETAPEASTAAPVEEVPADTEM 705
+                            ********655279***********************************************886...5678999************** PP
+
+                            XXXX CS
+                  HSP90 528 eevd 531
+                            eevd
+  sp|P02829|HSP82_YEAST 706 EEVD 709
+                            ***9 PP
+
+>> HATPase_c  Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.3   0.0   1.6e-14   4.4e-11       3      99 ..      28     168 ..      26     180 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 42.3 bits;  conditional E-value: 1.6e-14
+                            HHHHHHHHHHHHHHHHHHHHHH..........SEEEEEEEEECTCEEEEEEE-----TH...........HHHHHHCSTTTCCSCSSG CS
+              HATPase_c   3 edrlrqivselvdNavkatees..........geievrvkreegelvieVeDnGiGipe...........edlervfepffqtdddsr 69 
+                            e +lr+++s++ d   k  ++s          +++++r+++++++ v+e++D+GiG+++           +   + f++  ++++d +
+  sp|P02829|HSP82_YEAST  28 EIFLRELISNASDALDKIRYKSlsdpkqletePDLFIRITPKPEQKVLEIRDSGIGMTKaelinnlgtiaKSGTKAFMEALSAGADVS 115
+                            6789999999999999999999****************************************************************** PP
+
+                            GGTT----THHHHHHCCEEEEEEEEECTC........................T CS
+              HATPase_c  70 kvggtGlGlsivkklvellggeieveske........................g 99 
+                            ++g++G+G+++  ++++++++ i+ ++ +                        g
+  sp|P02829|HSP82_YEAST 116 MIGQFGVGFYSLFLVADRVQV-ISKSNDDeqyiwesnaggsftvtldevneriG 168
+                            ********************9.55555556888888665555555555555555 PP
+
+>> HATPase_c_3  Histidine kinase-, DNA gyrase B-, and HSP90-like ATPase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   40.7   0.0   5.4e-14   1.5e-10       2      99 ..      25     145 ..      24     169 .. 0.78
+   2 ?   -4.2   2.3         4   1.1e+04     104     113 ..     243     252 ..     209     275 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 40.7 bits;  conditional E-value: 5.4e-14
+            HATPase_c_3   2 sl.edAiaelvdNsldAdatn..................vkisidedkkekseisieDnGkGmskeelvnal.klgrsskdeekeekt 69 
+                            s+ e  + el+ N+ dA  +                   + i+ +    e++ ++i D G Gm+k+el+n+l ++++s +++  e+ +
+  sp|P02829|HSP82_YEAST  25 SNkEIFLRELISNASDALDKIrykslsdpkqletepdlfIRITPKP---EQKVLEIRDSGIGMTKAELINNLgTIAKSGTKAFMEALS 109
+                            66677899********976666788889999999999555555555...579******************662677776664443333 PP
+
+            HATPase_c_3  70 .......lGrkGiGmklAslklgrkvtviskkegeks 99 
+                                   +G++G+G  ++ + ++++v+visk++++++
+  sp|P02829|HSP82_YEAST 110 agadvsmIGQFGVG-FYSLFLVADRVQVISKSNDDEQ 145
+                            4555566*******.****************998877 PP
+
+  == domain 2  score: -4.2 bits;  conditional E-value: 4
+            HATPase_c_3 104 dvekiekeek 113
+                            ++e++++ee+
+  sp|P02829|HSP82_YEAST 243 KLEEVDEEEE 252
+                            2233333333 PP
+
+>> Peptidase_S10  Serine carboxypeptidase
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.3   0.1     0.095   2.6e+02     277     325 ..     253     300 ..     188     424 .. 0.72
+   2 ?    9.6   0.0   0.00014      0.39     117     144 ..     451     478 ..     430     494 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 0.3 bits;  conditional E-value: 0.095
+                            HHHHHHHCSCCHHHH--...--SSS--S--HHHHHT---TT.S-TCHHH CS
+          Peptidase_S10 277 savekylnreeVrkalhvnkaevkeweecndevfeqtgddvsksveeil 325
+                            ++ ++   +eeV++  ++n ++++ w++  +++++ +++  +ks++++ 
+  sp|P02829|HSP82_YEAST 253 KKPKTKKVKEEVQEIEELN-KTKPLWTRNPSDITQEEYNAFYKSISNDW 300
+                            2222222333444433333.44455555555555555555555554443 PP
+
+  == domain 2  score: 9.6 bits;  conditional E-value: 0.00014
+                            -HHHHHHHHHHHH-CHHCH--EEEE--T CS
+          Peptidase_S10 117 edlyefLkkffekfpeyksrdfyitGES 144
+                             d ++ L++++++ pe++++  yitGES
+  sp|P02829|HSP82_YEAST 451 VDELTSLTDYVTRMPEHQKNIYYITGES 478
+                            567889*********************9 PP
+
+>> KCl_Cotrans_1  K-Cl Co-transporter type 1 (KCC1)
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -1.8   0.3      0.77   2.1e+03      16      28 ..     248     260 ..     247     261 .. 0.82
+   2 ?   12.1   0.1   3.4e-05     0.093       9      26 ..     670     689 ..     668     690 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: -1.8 bits;  conditional E-value: 0.77
+          KCl_Cotrans_1  16 Dedeeteaatekv 28 
+                            De+ee    t kv
+  sp|P02829|HSP82_YEAST 248 DEEEEKKPKTKKV 260
+                            9***988888777 PP
+
+  == domain 2  score: 12.1 bits;  conditional E-value: 3.4e-05
+          KCl_Cotrans_1   9 RLtSvg..SDedeeteaate 26 
+                            RL S+g   Dedeete+a+e
+  sp|P02829|HSP82_YEAST 670 RLISLGlnIDEDEETETAPE 689
+                            777777445*********98 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query sequence(s):                         1  (709 residues searched)
+Target model(s):                       13672  (2396357 nodes)
+Passed MSV filter:                      1504  (0.110006); expected 273.4 (0.02)
+Passed bias filter:                      463  (0.0338648); expected 273.4 (0.02)
+Passed Vit filter:                        69  (0.00504681); expected 13.7 (0.001)
+Passed Fwd filter:                        12  (0.000877706); expected 0.1 (1e-05)
+Initial search space (Z):              13672  [actual number of targets]
+Domain search space  (domZ):               5  [number of targets reported over threshold]
+# CPU time: 0.30u 0.15s 00:00:00.44 Elapsed: 00:00:03.67
+# Mc/sec: 461.84
+//
+[ok]
