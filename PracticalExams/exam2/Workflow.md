@@ -1,81 +1,75 @@
-Work with two protein structures called SH2.pdb and SH3.pdb. 
+Working with a protein for which we have its sequence in a separate file (target.fa).
 
-<u>a) Obtain the amino acid sequences corresponding with the two structures.</u>
+<u>a) Does it belongs to some family of PFAM?. If so, obtain the HMM profile from PFAM and name it p28b.hmm</u>
+
+```
+hmmscan /shared/databases/pfam-3/Pfam-A.hmm target.fa > target.out
+hmmfetch /shared/databases/pfam-3/Pfam-A.hmm zf-C4 > target.hmm 
+hmmsearch target.hmm /shared/databases/blastdat/pdb_seq > target_pdb_HMM.out 
+hmmsearch target.hmm /shared/databases/blastdat/uniprot_sprot > target_uni_HMM.out
+```
+
+
+
+<u>b) Do you think that this protein belongs to some fold in SCOP?, which one?</u>
+
+http://scop.mrc-lmb.cam.ac.uk/legacy/search.cgi?ver=1.75
+
+Fold: [Glucocorticoid receptor-like (DNA-binding domain)](http://scop.mrc-lmb.cam.ac.uk/legacy/data/scop.b.h.fe.A.html) [57715] (1dsz)
+
+Fold: [Nuclear receptor ligand-binding domain](http://scop.mrc-lmb.cam.ac.uk/legacy/data/scop.b.b.cdh.A.A.html) [48507]
+
+
+
+<u>c) What function do you think this protein may have?</u>
+
+Receptor for retinoic acid (PubMed:[19850744](https://www.uniprot.org/citations/19850744), PubMed:[16417524](https://www.uniprot.org/citations/16417524), PubMed:[20215566](https://www.uniprot.org/citations/20215566)).
+
+DNA-binding transcription factor activity
+
+
+
+<u>d) Find 4 homologous proteins in the swissprot database and align them using the HMM you obtained in question a). Then, change the format of this alignment from stockholm to clustalw. Name this alignment homologs.aln.</u>
 
 ```bash
-# This program splits one PDB file in different chains and corrects the PDB format. It 
-# also provides us the fasta sequence of each one of the chains. 
-perl /shared/PERL/PDBtoSplitChain.pl -i SH2.pdb -o SH2
-perl /shared/PERL/PDBtoSplitChain.pl -i SH3.pdb -o SH3
+psiblast -query target.fa -num_iterations 5 -out target_sprot.out -db /shared/databases/blastdat/uniprot_sprot.fasta
+psiblast -query target.fa -num_iterations 5 -out target_sprot.out -db /shared/databases/blastdat/pdb_seq
 ```
-
-<u>b) Are there HMMs from PFAM for each of these structures?</u>
 
 ```bash
-## Assign best profiles to target seq using hmmscan on pfam
-hmmscan /shared/databases/pfam-3/Pfam-A.hmm SH2.fa > SH2.out
-hmmscan /shared/databases/pfam-3/Pfam-A.hmm SH3.fa > SH3.out
-## Extract profiles from Pfam that correspond to domains of target seq 
-hmmfetch /shared/databases/pfam-3/Pfam-A.hmm "SH2" > SH2.hmm 
-hmmfetch /shared/databases/pfam-3/Pfam-A.hmm "SH3_1" > SH3.hmm 
+wget https://www.uniprot.org/uniprot/Q6QMY5.fasta
+wget https://www.uniprot.org/uniprot/Q5QJV7.fasta
+wget https://www.uniprot.org/uniprot/O08580.fasta
+wget https://www.uniprot.org/uniprot/P11474.fasta
+
+cat Q6QMY5.fasta > homologs.fasta
+cat Q5QJV7.fasta >> homologs.fasta
+cat O08580.fasta >> homologs.fasta
+cat P11474.fasta >> homologs.fasta
+
+hmmalign p28b.hmm homolgs.fasta > homologs.sto
+perl /shared/PERL/aconvertMod2.pl -in h -out c <homologs.sto>homologs.aln
 ```
 
-<u>c) Find 4 homologous sequence for SH2. Put them into a single multifasta file.</u> 
 
-```bash
-hmmsearch SH2.hmm /shared/databases/blastdat/pdb_seq > SH2_pdb_homologs.out
-hmmsearch SH2.hmm /shared/databases/blastdat/uniprot_sprot > SH2_uni_homologs.out
-```
 
-```
-wget https://www.uniprot.org/uniprot/P29349.fasta
-wget https://www.uniprot.org/uniprot/Q06124.fasta
-wget https://www.uniprot.org/uniprot/P16885.fasta
-wget https://www.uniprot.org/uniprot/P29351.fasta
-```
+<u>e) Find one template for our protein.</u>
+
+1dsz
+
+
+
+<u>f) Use the template you obtained in the previous question to make a model of our target protein. Name this file model.pdb.</u>
 
 ```
-touch homologs.fasta
-cat P29349.fasta > homologs.fasta
-cat Q06124.fasta > 
-```
-
-<u>d) Make a MSA of the 4 sequences you obtained previously using the corresponding HMM & change the format of the alignment to clustalw format</u>
-
-```
-hmmalign SH2.hmm homologs.fa > homologs_MSA.sto 
-perl /shared/PERL/aconvertMod2.pl -in h -out c <homologs_MSA.sto>homologs_MSA.aln 
-```
-
-<u>e) We want to study the L253R mutation in SH2. Model the structure of SH2 containing this mutation. Be aware that the structure that you have is not complete, therefore the first amino acid corresponds with position 232. Name your model as mutant_model.pdb.</u>
-
-1. Open SH2.pdb in PyMol
-
-2. Change aa in pos 253 to R (Arg)
-
-```bash
-perl /shared/PERL/PDBtoSplitChain.pl -i mutation_model.pdb -o mutation_model
-
-# Create multifasta with SH2.fa & mutant_modelB.fa
-cat SH2B.fa > target_template.fa
-cat mutation_modelB.fa >> target_template.fa
-
-# Clustalw2 alignment
-clustalw2 target_template.fa 
-
-# Change format to pir
-perl /shared/PERL/aconvertMod2.pl -in c -out p < target_template.aln > target_template.pir
+wget https://files.rcsb.org/download/1DSZ.pdb
+perl /shared/PERL/PDBtoSplitChain.pl -i 1DSZ.pdb -o 1DSZ 
+clustalw2 target_template.fa
+perl /shared/PERL/aconvertMod2.pl -in c -out p <target_template.aln>target_template.pir 
 ```
 
 ```
-module load modeller/10.0
-source activate modeller
-mod10.0 modeling.py 
+wget https://files.rcsb.org/download/3D24.pdb
+wget https://files.rcsb.org/download/1XB7.pdb
 ```
-
-<u>f) Analyze the mutant model you generated previously with ProSa and compare it with a reference structure. Can you tell what is the effect of the mutation in the overall stability of the protein? What reference structure are you using? Take an image of the comparison of the two ProSa profiles and save it as prosa_analysis.png.</u>
-
-
-
-<u>g) Search for a structure containing two proteins interacting, one being homolog to SH2 and the other to SH3. Name this file as template.pdb.</u>
 
